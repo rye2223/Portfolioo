@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery</title>
+    <style>
+        body {
+            background-color: lightgreen; /* Light green background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: BLACK;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            display: flex;
+            justify-content: space-between; /* Space between title and logo */
+            align-items: center;
+            padding: 40px; /* Increased padding for more height */
+            background: red; /* Red background */
+        }
+        .header-title {
+            font-size: 24px; /* Font size for header title */
+            color: black; /* Black text color */
+            flex-grow: 1; /* Allow title to take available space */
+            text-align: center; /* Center align header title */
+            font-weight: bold; /* Make the header title bold */
+        }
+        header img {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        .content {
+            flex-grow: 1; /* Take up remaining space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* Position relative for absolute positioning of button */
+            text-align: center; /* Center the text */
+            padding: 20px; /* Add padding to the content */
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            gap: 20px; /* Space between images */
+            width: 100%;
+            max-width: 800px; /* Max width for the gallery */
+        }
+        .gallery-item {
+            text-align: center; /* Center align text under images */
+        }
+        .gallery-item img {
+            width: 100%; /* Responsive image */
+            border-radius: 8px; /* Rounded corners for images */
+        }
+        .back-button {
+            margin-top: 20px; /* Adjusted margin from the top */
+            padding: 10px 20px;
+            background-color: white;
+            border: 2px solid red;
+            color: black; /* Default text color is black */
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s; /* Added color transition */
+            align-self: flex-end; /* Align button to the right */
+        }
+        .back-button:hover {
+            background-color: black; /* Hover background color */
+            color: red; /* Text color changes to red on hover */
+        }
+        footer {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            padding: 40px;
+            background: red; /* Red background */
+            width: 100%;
+        }
+        .footer-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Space out items */
+            margin-bottom: 10px; /* Space between footer items */
+        }
+        .footer-item img {
+            margin-right: 1px;
+            width: 50px;
+            border-radius: 50%;
+        }
+        .footer-item a {
+            color: black;
+            text-decoration: none;
+        }
+        .contact {
+            margin-top: auto; /* Pushes contact number to the bottom */
+            text-align: left; /* Left align contact number */
+            margin-bottom: 20px; /* Space below the contact number */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">PROJECT GALLERY</div>
+        <img src="https://scontent.fmnl7-2.fna.fbcdn.net/v/t39.30808-1/488068348_28938793825767533_9148826543636828057_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeF7UqldH5gahxq19Z62PqGRdLVqKCCXEAZ0tWooIJcQBvWHDMzP0W9Xhdk5HwXvUv2uD6kIajCqAb237-_4Z6H3&_nc_ohc=_HkGJOwnA2MQ7kNvwECp_2d&_nc_oc=AdmQ-f-ca-dv1ravELmOL_WtZAXpc3blOpPuetEdtw36VHCCvMYbE1hDaVRSiNvK_24&_nc_zt=24&_nc_ht=scontent.fmnl7-2.fna&_nc_gid=GPhOB0YOfmJpSN34JagnZA&oh=00_AfFDzfml1WMd-gR_BAG0QXZKfvc-Lz9dVNIRFyOZDSpPCQ&oe=67FE74F4" alt="Logo">
+    </header>
+    <div class="content">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t39.30808-6/490267286_732263622465293_15660837939040766_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rmohOCXg_P4Q7kNvwFINqTi&_nc_oc=Adl_XFo-VoxYCSbf7JQvOyFy8p1nQpR6ZNZ60EOUHcn3S2CC-ys44Rg7JlGFh6cdKOE&_nc_zt=23&_nc_ht=scontent.fmnl30-3.fna&_nc_gid=wnUWXqfUEeoxntfs9cSmpQ&oh=00_AfEEESLdxLdouS7CZTgg93cs_-UnneUD2ItpNEhdNSlBrg&oe=67FF0A3A" alt="Project 1">
+                <p>Learning Java</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/490584560_732264089131913_1558113510076378780_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=FBpq2c4gd1IQ7kNvwEcDB9L&_nc_oc=AdnEUzJ_AWWPYWGXyFMDCulbiLbJvKKyqRXHyMEQnFt3T_7RTciqXArqergTQwYVURE&_nc_zt=23&_nc_ht=scontent.fmnl30-2.fna&_nc_gid=ddF-2LzwQyhVa_zpHrpMGQ&oh=00_AfFPvDpaTgdqtIJysjifECQfp0P-Kqm6MFwuPZwc0SWLtQ&oe=67FEED3E" alt="Project 2">
+                <p>Learning WebDev</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/490748099_732268975798091_1977577003604271696_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=1m2hzzB81IUQ7kNvwFj4vck&_nc_oc=AdmtSs1Xzcd-RmkzZnVWDcS5soC86Hk9Xk4x5KeFt6CW6_06hrreBg8uJZe2X3f6z6s&_nc_zt=23&_nc_ht=scontent.fmnl30-2.fna&_nc_gid=8xuQgi6x0JYPTlRXlHP9Ng&oh=00_AfHoi0wbNDAo2ib-Nc037OgmpCkkYipsG1U4bBTrmxXBiw&oe=67FF08C7" alt="Project 3">
+                <p>Learning C</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t39.30808-6/490018400_732279529130369_8934974435088807003_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=1xSg2JRzqrkQ7kNvwEcMc6a&_nc_oc=Adk20bzdWOdgy-Vokvx38bVhW92lSDXT0wb5f0uVH5K4-4NVWpzGpneL8FqQBNE9ovU&_nc_zt=23&_nc_ht=scontent.fmnl30-1.fna&_nc_gid=fr5fbqxZZpZeIe5gJyc8Bg&oh=00_AfFtSwZhISAOg9PIQ8hQ3_IYxzJ3zNuAWEAkrzdEb_1Mug&oe=67FF042A" alt="Project 4">
+                <p>Learning Microsoftware (Like Powerpoint)</p>
+            </div>
+        </div>
+        <button class="back-button" onclick="navigateTo('index.html')">Back to Menu</button>
+    </div>
+    <footer>
+        <div class="footer-item">
+            <a href="https://www.facebook.com/ryan.balase.3" target="_blank">
+                <img src="https://img.freepik.com/premium-vector/vector-facebook-social-media-icon-illustration_534308-21672.jpg?semt=ais_hybrid&w=740" alt="Facebook Logo"> 
+                <span>Ryan Balase</span>
+            </a>
+        </div>
+        <div class="footer-item">
+            <a href="https://www.instagram.com/_rye777/" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHP2W0X8Bj9Wwou8Y5Iv2q_Aa-nME9SMwEAA&s" alt="Instagram Logo"> 
+                <span>_Ryeee777</span>
+            </a>
+        </div>
+        <div class="footer-item">
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+                <img src="https://static.dezeen.com/uploads/2020/10/gmail-google-logo-rebrand-workspace-design_dezeen_2364_sq.jpg" alt="Email Logo"> 
+                <span>Ryanbalase14@gmail.com</span>
+            </a>
+        </div>
+        <div class="contact">
+            <span> 📞Contact: 092-175-80137</span>
+        </div>
+    </footer>
+   
+</body>
+</html>

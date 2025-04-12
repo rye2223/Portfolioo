@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+    <style>
+        body {
+            background-image: url('https://gimgs2.nohat.cc/thumb/f/640/abstract-hud-technology-background-free-vector--606e9489835145f4ac94.jpg'); /* Replace with your desired background image URL */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: BLACK;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: lightgreen;
+        }
+        .header-title {
+            flex-grow: 8;
+            text-align: center;
+        }
+        header img {
+            max-width: 150px; /* Adjust logo size */
+            border-radius: 50%;
+        }
+        .nav-container, .bottom-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .nav-box {
+            margin: 10px;
+            padding: 20px;
+            width: 100px;
+            height: 100px;
+            background: lightgreen;
+            text-align: center;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease; /* Animation transition */
+            cursor: pointer; /* Change cursor to pointer */
+        }
+        .nav-box:hover {
+            transform: scale(1.05); 
+        }
+        .nav-box:active {
+            transform: scale(0.95); /* Scale effect on click */
+        }
+        .nav-box a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+     
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            background: lightgreen; /* Light green background for footer */
+            width: 100%;
+        }
+        .footer-item {
+            display: flex;
+            align-items: center;
+        }
+        .footer-item img {
+            margin-right: 1px; /* Space between logo and text */
+            width: 50px; /* Adjust logo size */
+            border-radius: 50%; /* Make logos rounded */
+            
+        }
+        .footer-item a {
+            color: black;
+            text-decoration: none;
+        }
+        .footer-item img:hover{
+            transform: scale(2.0);
+        }
+        .footer-item img:active {
+            transform: scale(1.95);
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <h1>Welcome to My PORTFOLIO</h1>
+        </div>
+        <img src="https://scontent.fmnl7-2.fna.fbcdn.net/v/t39.30808-1/488068348_28938793825767533_9148826543636828057_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeF7UqldH5gahxq19Z62PqGRdLVqKCCXEAZ0tWooIJcQBvWHDMzP0W9Xhdk5HwXvUv2uD6kIajCqAb237-_4Z6H3&_nc_ohc=_HkGJOwnA2MQ7kNvwECp_2d&_nc_oc=AdmQ-f-ca-dv1ravELmOL_WtZAXpc3blOpPuetEdtw36VHCCvMYbE1hDaVRSiNvK_24&_nc_zt=24&_nc_ht=scontent.fmnl7-2.fna&_nc_gid=GPhOB0YOfmJpSN34JagnZA&oh=00_AfFDzfml1WMd-gR_BAG0QXZKfvc-Lz9dVNIRFyOZDSpPCQ&oe=67FE74F4" alt="Logo"> <!-- Change to your logo image -->
+    </header>
+    <div class="nav-container">
+        <div class="nav-box" onclick="navigateTo('Personalinfo.html')">
+            <a href="#">PERSONAL INFORMATION</a>
+        </div>
+        <div class="nav-box" onclick="navigateTo('Skill.html')">
+            <a href="#">BACKGROUND SKILLS</a>
+        </div>
+    </div>
+    <div class="bottom-links">
+        <div class="nav-box" onclick="navigateTo('Galllery.html')">
+            <a href="#">PROJECT GALLERY</a>
+        </div>
+        <div class="nav-box" onclick="navigateTo('Background.html')">
+            <a href="#">EDUCATIONAL BACKGROUND</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-item">
+            <a href="https://www.facebook.com/ryan.balase.3" target="_blank">
+                <img src="https://img.freepik.com/premium-vector/vector-facebook-social-media-icon-illustration_534308-21672.jpg?semt=ais_hybrid&w=740" alt="Facebook Logo"> 
+                <span>Ryan Balase</span>
+            </a>
+        </div>
+        <div class="footer-item">
+            <a href="https://www.instagram.com/_rye777/" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHP2W0X8Bj9Wwou8Y5Iv2q_Aa-nME9SMwEAA&s" alt="Instagram Logo"> 
+                <span>_Ryeee777</span>
+            </a>
+        </div>
+        <div class="footer-item">
+            <a href="">
+                <img src="https://static.dezeen.com/uploads/2020/10/gmail-google-logo-rebrand-workspace-design_dezeen_2364_sq.jpg" alt="Email Logo"> 
+                <span>Ryanbalase14@gmail.com</span>
+            </a>
+        </div>
+        <div class="footer-item">
+            <span> 📞Contact: 092-175-80137</span>
+
+        </div>
+    </footer>
+
+</body>
+</html>

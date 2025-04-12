@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Background</title>
+    <style>
+        body {
+            background-color: lightgreen; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: BLACK;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 40px; 
+            background: red; 
+        }
+        .header-title {
+            font-size: 24px; 
+            color: black; 
+            flex-grow: 1; 
+            text-align: center; 
+            font-weight: bold; 
+        header img {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        .content {
+            flex-grow: 1; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative; 
+            text-align: center; 
+        }
+        .education {
+            color: black; 
+            font-size: 18px; 
+            margin-bottom: 60px; 
+            text-align: left; 
+        }
+        .education-item {
+            margin: 10px 0; 
+        }
+        .back-button {
+            position: absolute; 
+            bottom: 20px; 
+            right: 20px; 
+            padding: 10px 20px;
+            background-color: white;
+            border: 2px solid red;
+            color: black; 
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s; 
+        }
+        .back-button:hover {
+            background-color: black; 
+            color: red; 
+        }
+        footer {
+            display: flex;
+            flex-direction: column; 
+            padding: 40px;
+            background: red; 
+            width: 100%;
+        }
+        .footer-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            margin-bottom: 10px; 
+        }
+        .footer-item img {
+            margin-right: 1px;
+            width: 50px;
+            border-radius: 50%;
+        }
+        .footer-item a {
+            color: black;
+            text-decoration: none;
+        }
+        .contact {
+            margin-top: auto; 
+            text-align: left; 
+            margin-bottom: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">EDUCATIONAL BACKGROUND</div>
+        <img src="https://scontent.fmnl7-2.fna.fbcdn.net/v/t39.30808-1/488068348_28938793825767533_9148826543636828057_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeF7UqldH5gahxq19Z62PqGRdLVqKCCXEAZ0tWooIJcQBvWHDMzP0W9Xhdk5HwXvUv2uD6kIajCqAb237-_4Z6H3&_nc_ohc=_HkGJOwnA2MQ7kNvwECp_2d&_nc_oc=AdmQ-f-ca-dv1ravELmOL_WtZAXpc3blOpPuetEdtw36VHCCvMYbE1hDaVRSiNvK_24&_nc_zt=24&_nc_ht=scontent.fmnl7-2.fna&_nc_gid=GPhOB0YOfmJpSN34JagnZA&oh=00_AfFDzfml1WMd-gR_BAG0QXZKfvc-Lz9dVNIRFyOZDSpPCQ&oe=67FE74F4" alt="Logo">
+    </header>
+    <div class="content">
+        <div class="education">
+            <div class="education-item"><strong>GRADUATED AT:</strong></div>
+            <div class="education-item">PRE-SCHOOL: CAMARIN ELEMENTARY SCHOOL</div>
+            <div class="education-item">HIGH SCHOOL: CAMARIN HIGH SCHOOL</div>
+            <div class="education-item">SENIOR HIGH SCHOOL (Strand: TVL - ICT)</div>
+        </div>
+        <button class="back-button" onclick="navigateTo('index.html')">Back to Menu</button>
+    </div>
+    <footer>
+        <div class="footer-item">
+            <a href="https://www.facebook.com/ryan.balase.3" target="_blank">
+                <img src="https://img.freepik.com/premium-vector/vector-facebook-social-media-icon-illustration_534308-21672.jpg?semt=ais_hybrid&w=740" alt="Facebook Logo"> 
+                <span>Ryan Balase</span>
+            </a>
+        </div>
+        <div class="footer-item">
+            <a href="https://www.instagram.com/_rye777/" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHP2W0X8Bj9Wwou8Y5Iv2q_Aa-nME9SMwEAA&s" alt="Instagram Logo"> 
+                <span>_Ryeee777</span>
+            </a>
+        </div>
+        <div class="footer-item">
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+                <img src="https://static.dezeen.com/uploads/2020/10/gmail-google-logo-rebrand-workspace-design_dezeen_2364_sq.jpg" alt="Email Logo"> 
+                <span>Ryanbalase14@gmail.com</span>
+            </a>
+        </div>
+        <div class="contact">
+            <span> 📞Contact: 092-175-80137</span>
+        </div>
+    </footer>
+</body>
+</html>
